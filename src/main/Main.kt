@@ -9,8 +9,6 @@ import main.dominio.cartao.Bandeira
 import main.dominio.cartao.Cartao
 import main.dominio.pedido.Pagamento
 import main.impressao.Epson
-import main.impressao.Hp
-import main.operadora.Cielo
 import main.operadora.Rede
 
 
@@ -24,11 +22,13 @@ fun main() {
     var joao = Cliente("João", "123.456.789-00")
     val pedido = Pedido(joao)
 
-    val itemPedido_arroz = ItemPedido(camiseta, 1)
-    val itemPedido_feijao = ItemPedido(calca, 1)
+    val itemPedido_camiseta = ItemPedido(camiseta, 1)
+    val itemPedido_calca = ItemPedido(calca, 1)
+    val itemPedido_meia = ItemPedido(meia, 1)
 
-    pedido.addProduto(itemPedido_arroz)
-    pedido.addProduto(itemPedido_feijao)
+    pedido.addProduto(itemPedido_camiseta)
+    pedido.addProduto(itemPedido_calca)
+    pedido.addProduto(itemPedido_meia)
 
     val cartaoJoao = Cartao("João da Siva", "32145678910", Bandeira.MARTERCARD)
 
