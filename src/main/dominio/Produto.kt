@@ -1,4 +1,4 @@
-package main
+package main.dominio
 
 import java.math.BigDecimal
 
