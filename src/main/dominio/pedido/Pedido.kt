@@ -22,7 +22,7 @@ class Pedido (val cliente: Cliente): Imprimivel {
     }
 
     override fun obtemCabecalho(): String {
-        return "Pedidon Nº ${numeroPedido}"
+        return "Pedido Nº ${numeroPedido}"
     }
 
     override fun obtemCorpo(): String {

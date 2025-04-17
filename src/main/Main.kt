@@ -8,8 +8,10 @@ import main.dominio.ProdutoFactory
 import main.dominio.cartao.Bandeira
 import main.dominio.cartao.Cartao
 import main.dominio.pedido.Pagamento
+import main.impressao.Epson
 import main.impressao.Hp
 import main.operadora.Cielo
+import main.operadora.Rede
 
 
 fun main() {
@@ -28,10 +30,10 @@ fun main() {
     pedido.addProduto(itemPedido_arroz)
     pedido.addProduto(itemPedido_feijao)
 
-    val cartaoJoao = Cartao("João da Siva", "12345678910", Bandeira.MARTERCARD)
+    val cartaoJoao = Cartao("João da Siva", "32145678910", Bandeira.MARTERCARD)
 
-    val operadora = Cielo()
-    val impressora = Hp()
+    val operadora = Rede()
+    val impressora = Epson()
 
     val pagamento = Pagamento(operadora, impressora)
 
