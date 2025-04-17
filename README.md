@@ -44,12 +44,3 @@ pagamento.fechaPedido(pedido, cartao, 1234)
 ## 📄 Nota Fiscal
 
 A nota fiscal é gerada após o pagamento e impressa via uma impressora simulada definida no código (HP ou Epson).
-
-## 🔗 Repositório
-
-Acesse o código-fonte completo:  
-👉 [github.com/Miguel-Galli/sistema-loja](https://github.com/Miguel-Galli/sistema-loja)
-
-## 🚀 Autor
-
-Desenvolvido por **Miguel Galli** como parte do bootcamp DIO.
